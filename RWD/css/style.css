@@ -181,6 +181,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  font-size: 16px;
 }
 
 /*---------------------------------------HEADER-------------------------------------*/
@@ -196,4 +197,56 @@ header h1 {
 header h2 {
   font-size: 1.05rem;
   font-weight: 300;
+}
+
+/*---------------------------------------NAVIGATION-------------------------------------*/
+nav {
+  background-color: #bbc2ca;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul li {
+  float: left;
+  width: 25%;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul li a {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.5rem 0;
+  color: #424e64;
+  text-decoration: none;
+  transition: background 0.75s ease, color 0.75s ease;
+}
+nav ul li.active a {
+  background-color: #9ea8b4;
+}
+nav ul li a:hover {
+  color: #bbc2ca;
+  background-color: #424e64;
+}
+
+/*---------------------------------------FOOTER-------------------------------------*/
+footer {
+  width: 100%;
+  background-color: #424e64;
+}
+footer p {
+  text-align: center;
+  color: #bbc2ca;
+  padding: .75rem 0;
+  font-size: .9rem;
+}
+footer p a {
+  color: #bbc2ca;
+}
+
+/*----------------Clearfix: Force an Element not to collapse--------------------*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
