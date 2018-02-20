@@ -314,9 +314,32 @@ footer p a {
   }
 }
 @media only screen and (min-width: 1140px) {
+  /*---------------------------------------BODY-------------------------------------*/
+  body {
+    background-image: url(../img/background.jpg);
+    width: 100%;
+  }
+
+  div.wrapper {
+    max-width: 80rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px #000000;
+    background-color: white;
+  }
+
   /*---------------------------------------MAIN-------------------------------------*/
   main figure.photo {
     width: 21%;
     float: left;
+  }
+  main div.blog article {
+    float: left;
+    width: 29.33%;
+  }
+  main div.blog article:nth-child(2n+1) {
+    clear: none;
+  }
+  main div.blog article:nth-child(3n+1) {
+    clear: left;
   }
 }
