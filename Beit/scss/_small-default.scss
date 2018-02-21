@@ -14,15 +14,19 @@ body {
 
 /* ------------- HEADER ------------- */
 header {
+    height: 110px;
+    background-image: url(../img/header0560.jpg);
 
 	h1, h2 {
         padding-left: $gutter; 
         font-weight: $normalWeight;
+        margin-left: 150px;
     } //end both
 
     
 	h1{
         font-size: 2rem; 
+        padding-top: 35px;
     } //end h1
     
 	h2{
