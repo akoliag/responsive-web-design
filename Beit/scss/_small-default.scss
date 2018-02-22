@@ -16,13 +16,19 @@ body {
 header {
     height: 110px;
     background-image: url(../img/header0560.jpg);
-
+    position: relative;
 	h1, h2 {
         padding-left: $gutter; 
         font-weight: $normalWeight;
-        margin-left: 150px;
+        margin-left: 110px;
+        
     } //end both
-
+    
+    figure.logo {
+        position: absolute; 
+        bottom: 0; 
+        left: 2%;
+    }
     
 	h1{
         font-size: 2rem; 
@@ -34,7 +40,27 @@ header {
     } //end h2
 }
 
+/*  ------------- MAIN -------------  */
+main {
+    min-height: 20rem;
+    h1 {
+        font-size: 2rem;
+        margin: 1rem 0 0 $gutter;
+        color: lighten($primaryColor, 10%);
+    }
+    p {
+        margin: 1rem 0 0 $gutter;
+        line-height: 130%;
 
+    }
+    figure {
+        width: 96%;
+        margin-left: $gutter;
+    }
+    figure img {
+        width: 100%;
+    }
+}
 
 /*  ------------- NAV -------------  */
 nav {

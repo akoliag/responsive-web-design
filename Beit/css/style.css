@@ -170,20 +170,41 @@ body {
 /* ------------- HEADER ------------- */
 header {
   height: 110px;
-  background-image: url(../img/header0560.jpg); }
+  background-image: url(../img/header0560.jpg);
+  position: relative; }
   header h1, header h2 {
     padding-left: 2%;
     font-weight: 300;
-    margin-left: 150px; }
+    margin-left: 110px; }
+  header figure.logo {
+    position: absolute;
+    bottom: 0;
+    left: 2%; }
   header h1 {
     font-size: 2rem;
     padding-top: 35px; }
   header h2 {
     font-size: 1rem; }
 
+/*  ------------- MAIN -------------  */
+main {
+  min-height: 20rem; }
+  main h1 {
+    font-size: 2rem;
+    margin: 1rem 0 0 2%;
+    color: #d9ceec; }
+  main p {
+    margin: 1rem 0 0 2%;
+    line-height: 130%; }
+  main figure {
+    width: 96%;
+    margin-left: 2%; }
+  main figure img {
+    width: 100%; }
+
 /*  ------------- NAV -------------  */
 nav {
-  background-color: #d0aa94;
+  background-color: #352256;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li {
     float: left;
@@ -196,26 +217,26 @@ nav {
     text-align: center;
     font-weight: 500;
     padding: .5rem 0;
-    color: #56508e;
+    color: #bdaadd;
     text-decoration: none; }
   nav ul li.active a {
-    background-color: #c08e71; }
+    background-color: #1e1431; }
   nav ul li a:hover {
-    color: #d0aa94;
-    background-color: #56508e; }
+    color: #352256;
+    background-color: #bdaadd; }
 
 /*  ------------- FOOTER -------------  */
 footer {
   clear: both;
   width: 100%;
-  background-color: #d0aa94; }
+  background-color: #352256; }
   footer p {
     text-align: center;
-    color: #56508e;
+    color: #bdaadd;
     padding: .75rem 0;
     font-size: .9rem; }
   footer p a {
-    color: #56508e; }
+    color: #bdaadd; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -231,7 +252,14 @@ footer {
     header h1 {
       padding-top: 50px; }
 
-  /* ------------- MAIN ------------- */ }
+  /* ------------- MAIN ------------- */
+  main {
+    max-width: 100rem;
+    margin: 0 auto; }
+    main figure {
+      width: 50%;
+      margin-right: 2%;
+      float: right; } }
 @media only screen and (min-width: 64em) {
   /* ------------- HEADER ------------- */
   header {
