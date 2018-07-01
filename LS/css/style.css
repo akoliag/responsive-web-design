@@ -1,49 +1,43 @@
-/*
-Error: Invalid CSS after "// }": expected "}", was ""
-        on line 83 of sass/style.scss
+@import url("https://fonts.googleapis.com/css?family=Macondo+Swash+Caps");
+body {
+  margin: 0;
+  padding: 0; }
 
-78: //         }
-79: //       }
-80: //     }
-81: //   }
-82: // }
+/*NAVIGATION BAR*/
+nav {
+  width: 100%;
+  margin: 0 auto; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    nav ul a.logo {
+      font-size: 1.5rem;
+      font-family: "Macondo Swash Caps", cursive;
+      color: #e4e0e5;
+      padding: 1rem;
+      background-color: #1b5650;
+      margin-top: 0;
+      margin-bottom: 0;
+      border-bottom: 2px solid #34baac;
+      opacity: 0.9; }
+      nav ul a.logo:hover {
+        color: #e4e0e5; }
+    nav ul a {
+      text-decoration: none;
+      display: flex;
+      font-family: "Macondo Swash Caps", cursive;
+      background-color: #d2d1d3;
+      text-align: center;
+      font-size: 1rem;
+      color: #1b5650;
+      height: 1.5rem;
+      padding: 1rem;
+      margin: 0;
+      border-bottom: 2px solid white; }
+      nav ul a:hover {
+        color: #34baac; }
+      nav ul a span {
+        margin-right: 1rem; }
 
-Backtrace:
-sass/style.scss:83
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:679:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:678:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:421:in `media_directive'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:234:in `special_directive'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:209:in `directive'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"// }\": expected \"}\", was \"\"\A         on line 83 of sass/style.scss\A \A 78: //         }\A 79: //       }\A 80: //     }\A 81: //   }\A 82: // }"; }
+/*# sourceMappingURL=style.css.map */
