@@ -10,80 +10,53 @@ body {
   padding: 0;
 }
 /*NAVIGATION BAR*/
+.Navbar {
+  background-color: $secondary_color;
+  display: flex;
+  font-family: $main_font;
+  color: $main_color;
+  font-size: 1rem;
+  border-bottom: 2px solid $light_secondary_color;
 
-nav {
-  width: 100%;
-  margin: 0 auto;
+  span {
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+  }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  .Navbar__Items {
+    display: flex; //makes items flex horizontally
 
-    a {
-      &.logo {
-        font-size: 1.5rem;
-        font-family: $main_font;
-        color: $main_color;
-        padding: 1rem;
-        background-color: $secondary_color;
-        margin-top: 0;
-        margin-bottom: 0;
-        border-bottom: 2px solid $light_secondary_color;
-        opacity: 0.9;
-        &:hover {
-          color: $main_color;
-        }
-      }
-    }
-
-    a {
-      text-decoration: none;
-      display: flex;
-      font-family: $main_font;
-      background-color: $dark_background_color;
-      text-align: center;
-      font-size: 1rem;
-      color: $secondary_color;
-      height: 1.5rem;
+    .Navbar__Link {
       padding: 1rem;
-      margin: 0;
-      border-bottom: 2px solid white;
 
-     &:hover {
+      &:hover {
         color: $light_secondary_color;
-      }
-      span {
-        margin-right: 1rem;
       }
     }
   }
+
+  .Navbar__Items--right {
+    margin-left: auto;
+  }
 }
-// @media screen and (min-width: 480px) {
-//   nav {
-//     width: 100%;
-//     ul {
-//     display: flex;
-//       li {
-//         flex: 1;
-//         vertical-align: top;
-//         float: left;
-//
-//         a {
-//           &.logo {
-//             float: left;
-//             height: 1.5rem;
-//           }
-//         }
-//
-//         a {
-//           color: $main_color;
-//           background-color: $secondary_color;
-//           opacity: 0.9;
-//           border-bottom: 2px solid $main_color;
-//           padding: 1rem;
-//         }
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 480px) {
+  .Navbar,
+  .Navbar__Items {
+    flex-direction: column;
+
+    .Navbar__Link {
+      border-bottom: 2px solid white;
+
+      &:hover {
+        color: $light_secondary_color;
+      }
+    }
+  }
+
+  .Navbar__Items--right {
+    margin-right: auto;
+    background-color: $dark_background_color;
+    color: $secondary_color;
+    width: 100%;
+  }
+}
