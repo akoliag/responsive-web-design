@@ -52,6 +52,13 @@ body {
   .Navbar,
   .Navbar__Items {
     flex-direction: column;
+    .Navbar__Items--right {
+      margin-right: auto;
+      background-color: $dark_background_color;
+      color: $secondary_color;
+      width: 100%;
+      display: none;
+    }
     .Navbar__Link {
       border-bottom: 2px solid white;
       &:last-child {
@@ -71,10 +78,5 @@ body {
       }
     }
   }
-  .Navbar__Items--right {
-    margin-right: auto;
-    background-color: $dark_background_color;
-    color: $secondary_color;
-    width: 100%;
-  }
+
 }

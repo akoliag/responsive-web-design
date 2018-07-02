@@ -31,6 +31,13 @@ body {
   .Navbar,
   .Navbar__Items {
     flex-direction: column; }
+    .Navbar .Navbar__Items--right,
+    .Navbar__Items .Navbar__Items--right {
+      margin-right: auto;
+      background-color: #d2d1d3;
+      color: #1b5650;
+      width: 100%;
+      display: none; }
     .Navbar .Navbar__Link,
     .Navbar__Items .Navbar__Link {
       border-bottom: 2px solid white; }
@@ -42,12 +49,6 @@ body {
         color: #34baac; }
 
   .Navbar .Navbar__Items .Navbar__Link-brand.Navbar__Link-brand {
-    border-bottom: 2px solid #34baac; }
-
-  .Navbar__Items--right {
-    margin-right: auto;
-    background-color: #d2d1d3;
-    color: #1b5650;
-    width: 100%; } }
+    border-bottom: 2px solid #34baac; } }
 
 /*# sourceMappingURL=style.css.map */
