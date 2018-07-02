@@ -26,6 +26,8 @@ body {
         color: #e4e0e5; }
   .Navbar .Navbar__Items--right {
     margin-left: auto; }
+  .Navbar .Navbar__Link-toggle {
+    display: none; }
 
 @media only screen and (max-width: 480px) {
   .Navbar,
@@ -48,6 +50,11 @@ body {
       .Navbar__Items .Navbar__Link:hover {
         color: #34baac; }
 
+  .Navbar .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer; }
   .Navbar .Navbar__Items .Navbar__Link-brand.Navbar__Link-brand {
     border-bottom: 2px solid #34baac; } }
 

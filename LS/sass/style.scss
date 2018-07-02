@@ -10,7 +10,6 @@ body {
   padding: 0;
 }
 /*NAVIGATION BAR*/
-
 .Navbar {
   background-color: $secondary_color;
   display: flex;
@@ -47,11 +46,16 @@ body {
   .Navbar__Items--right {
     margin-left: auto;
   }
+
+  .Navbar__Link-toggle {
+    display: none;
+  }
 }
 @media only screen and (max-width: 480px) {
   .Navbar,
   .Navbar__Items {
     flex-direction: column;
+
     .Navbar__Items--right {
       margin-right: auto;
       background-color: $dark_background_color;
@@ -59,17 +63,27 @@ body {
       width: 100%;
       display: none;
     }
+
     .Navbar__Link {
       border-bottom: 2px solid white;
+
       &:last-child {
         border-bottom: none;
       }
+
       &:hover {
         color: $light_secondary_color;
       }
     }
   }
+
   .Navbar {
+    .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+    }
     .Navbar__Items {
       .Navbar__Link-brand {
         &.Navbar__Link-brand {
@@ -78,5 +92,4 @@ body {
       }
     }
   }
-
 }
