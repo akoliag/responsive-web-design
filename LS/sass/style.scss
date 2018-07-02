@@ -33,6 +33,12 @@ body {
         color: $light_secondary_color;
       }
     }
+    //switch off logo hover effect
+    .Navbar__Link-brand {
+      &:hover {
+        color: $main_color;
+      }
+    }
   }
 
   .Navbar__Items--right {

@@ -20,6 +20,8 @@ body {
       padding: 1rem; }
       .Navbar .Navbar__Items .Navbar__Link:hover {
         color: #34baac; }
+    .Navbar .Navbar__Items .Navbar__Link-brand:hover {
+      color: #e4e0e5; }
   .Navbar .Navbar__Items--right {
     margin-left: auto; }
 
