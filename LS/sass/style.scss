@@ -10,6 +10,7 @@ body {
   padding: 0;
 }
 /*NAVIGATION BAR*/
+
 .Navbar {
   background-color: $secondary_color;
   display: flex;
@@ -35,6 +36,8 @@ body {
     }
     //switch off logo hover effect
     .Navbar__Link-brand {
+      font-size: 1.5rem;
+
       &:hover {
         color: $main_color;
       }
@@ -49,16 +52,25 @@ body {
   .Navbar,
   .Navbar__Items {
     flex-direction: column;
-
     .Navbar__Link {
       border-bottom: 2px solid white;
-
+      &:last-child {
+        border-bottom: none;
+      }
       &:hover {
         color: $light_secondary_color;
       }
     }
   }
-
+  .Navbar {
+    .Navbar__Items {
+      .Navbar__Link-brand {
+        &.Navbar__Link-brand {
+          border-bottom: 2px solid $light_secondary_color;
+        }
+      }
+    }
+  }
   .Navbar__Items--right {
     margin-right: auto;
     background-color: $dark_background_color;
