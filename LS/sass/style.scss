@@ -84,6 +84,9 @@ body {
       position: absolute;
       cursor: pointer;
     }
+    .Navbar__ToggleShow {
+      display: flex;
+    }
     .Navbar__Items {
       .Navbar__Link-brand {
         &.Navbar__Link-brand {

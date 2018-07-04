@@ -55,6 +55,8 @@ body {
     display: initial;
     position: absolute;
     cursor: pointer; }
+  .Navbar .Navbar__ToggleShow {
+    display: flex; }
   .Navbar .Navbar__Items .Navbar__Link-brand.Navbar__Link-brand {
     border-bottom: 2px solid #34baac; } }
 
