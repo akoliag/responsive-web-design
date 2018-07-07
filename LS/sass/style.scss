@@ -10,6 +10,7 @@ body {
   padding: 0;
 }
 /*NAVIGATION BAR*/
+
 .Navbar {
   background-color: $secondary_color;
   display: flex;
@@ -51,6 +52,16 @@ body {
     display: none;
   }
 }
+/*HOME SECTION*/
+
+#home-section{
+  background: url('../img/people_c.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 600px;
+  border-bottom: 2px solid $light_secondary_color;
+}
+
 @media only screen and (max-width: 480px) {
   .Navbar,
   .Navbar__Items {
@@ -84,9 +95,11 @@ body {
       position: absolute;
       cursor: pointer;
     }
+
     .Navbar__ToggleShow {
       display: flex;
     }
+
     .Navbar__Items {
       .Navbar__Link-brand {
         &.Navbar__Link-brand {
@@ -94,5 +107,12 @@ body {
         }
       }
     }
+  }
+  #home-section{
+    width: 100%;
+    height: 200px;
+    background: url('../img/people-small.jpeg') no-repeat;
+    background-size: cover;
+
   }
 }
