@@ -38,10 +38,13 @@ body {
   border-bottom: 2px solid #bf6e28; }
   #home-section #search-bar input {
     background-color: #d2d1d3;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Macondo Swash Caps", cursive;
     border-radius: 15px;
-    padding-left: 0.5rem; }
+    padding-left: 0.5rem;
+    max-width: 30%;
+    display: block;
+    margin: 0 auto; }
 
 @media only screen and (max-width: 480px) {
   .Navbar,
