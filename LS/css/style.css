@@ -5,12 +5,12 @@ body {
 
 /*NAVIGATION BAR*/
 .Navbar {
-  background-color: #1b5650;
+  background-color: #110b01;
   display: flex;
   font-family: "Macondo Swash Caps", cursive;
   color: #e4e0e5;
   font-size: 1rem;
-  border-bottom: 2px solid #34baac; }
+  border-bottom: 2px solid #bf6e28; }
   .Navbar span {
     margin-right: 0.5rem;
     margin-left: 1rem; }
@@ -19,7 +19,7 @@ body {
     .Navbar .Navbar__Items .Navbar__Link {
       padding: 1rem; }
       .Navbar .Navbar__Items .Navbar__Link:hover {
-        color: #34baac; }
+        color: #bf6e28; }
     .Navbar .Navbar__Items .Navbar__Link-brand {
       font-size: 1.5rem; }
       .Navbar .Navbar__Items .Navbar__Link-brand:hover {
@@ -35,7 +35,7 @@ body {
   background-size: cover;
   width: 100%;
   min-height: 600px;
-  border-bottom: 2px solid #34baac; }
+  border-bottom: 2px solid #bf6e28; }
 
 @media only screen and (max-width: 480px) {
   .Navbar,
@@ -45,7 +45,7 @@ body {
     .Navbar__Items .Navbar__Items--right {
       margin-right: auto;
       background-color: #d2d1d3;
-      color: #1b5650;
+      color: #110b01;
       width: 100%;
       display: none; }
     .Navbar .Navbar__Link,
@@ -56,7 +56,7 @@ body {
         border-bottom: none; }
       .Navbar .Navbar__Link:hover,
       .Navbar__Items .Navbar__Link:hover {
-        color: #34baac; }
+        color: #bf6e28; }
 
   .Navbar .Navbar__Link-toggle {
     align-self: flex-end;
@@ -66,7 +66,7 @@ body {
   .Navbar .Navbar__ToggleShow {
     display: flex; }
   .Navbar .Navbar__Items .Navbar__Link-brand.Navbar__Link-brand {
-    border-bottom: 2px solid #34baac; }
+    border-bottom: 2px solid #bf6e28; }
 
   #home-section {
     width: 100%;
